@@ -23,7 +23,7 @@ html
     position: absolute;
     left: 600px;
     border-radius: 15px;
-    box-shadow: 0px 0px 5px 3px #ED213A;
+    box-shadow: 0px 0px 5px 3px #8f94fb;
 }
 
 #correct
@@ -46,4 +46,55 @@ html
     color: white;
     border-radius: 10px;
     display: none;
+}
+
+#question
+{
+    width: 500px;
+    height: 150px;
+    margin: 70px auto 10px auto;
+    background-color: white;
+    box-shadow: 0px 0px 5px 3px #8f94fb;
+    font-size: 100px;
+    text-align: center;
+    font-family: cursive, sans-serif;
+    color: black;
+    border-radius: 10px;
+}
+
+#instruction
+{
+   width: 500px;
+   height: 50px;
+   margin: 20px auto;
+   background-color: #2C5364;
+   color: white;
+   border-radius: 10px;
+   text-align: center;
+   line-height: 45px;
+   font-size: 25px;
+   box-shadow: 0px 0px 5px 3px #8f94fb;
+}
+
+#choices
+{
+   width: 500px;
+   height: 100px;
+   margin: 20px auto;
+}
+
+.box
+{
+    width: 85px;
+    height: 85px;
+    background-color: white;
+    float: left;
+    margin-right: 53px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 3px #8f94fb;
+}
+
+#box4
+{
+margin-right: 0;
 }
