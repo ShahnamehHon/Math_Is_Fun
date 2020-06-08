@@ -2,6 +2,9 @@ html
 {
     height: 100%;
     background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    background: -webkit-linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    background: -o-linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    background: -moz-linear-gradient(to right, #0f0c29, #302b63, #24243e);
 }
 
 #container
@@ -18,22 +21,28 @@ html
 #score
 {
     background-color: white;
-    color: grey;
+    color: black;
     padding: 11px;
     position: absolute;
     left: 96px;
     border-radius: 15px;
+    box-shadow: 0px 0px 5px 3px #8f94fb;
     -moz-box-shadow: 0px 0px 5px 3px #8f94fb;
     -webkit-box-shadow: 0px 0px 5px 3px #8f94fb;
+    -o-box-shadow: 0px 0px 5px 3px #8f94fb;
 }
 
 #correct
 {
     position: absolute;
     left: 300px;
-    background-color: #4BB543;
+    background-color: #80FF80;
+        box-shadow: 0px 0px 5px 3px #8f94fb;
+        -moz-box-shadow: 0px 0px 5px 3px #8f94fb;
+        -webkit-box-shadow: 0px 0px 5px 3px #8f94fb;
+        -o-box-shadow: 0px 0px 5px 3px #8f94fb;
     padding: 11px;
-    color: white;
+    color: black;
     border-radius: 10px;
     display: none;
 }
@@ -43,6 +52,10 @@ html
     position: absolute;
     left: 300px;
     background-color: #ED213A;
+        box-shadow: 0px 0px 5px 3px #8f94fb;
+            -moz-box-shadow: 0px 0px 5px 3px #8f94fb;
+            -webkit-box-shadow: 0px 0px 5px 3px #8f94fb;
+            -o-box-shadow: 0px 0px 5px 3px #8f94fb;
     padding: 11px;
     color: white;
     border-radius: 10px;
@@ -54,8 +67,8 @@ html
     width: 500px;
     height: 150px;
     margin: 70px auto 10px auto;
-
     background-color: white;
+    box-shadow: 0px 0px 5px 3px #8f94fb;
     -moz-box-shadow: 0px 0px 5px 3px #8f94fb;
     -webkit-box-shadow: 0px 0px 5px 3px #8f94fb;
     font-size: 100px;
@@ -76,6 +89,7 @@ html
    text-align: center;
    line-height: 45px;
    font-size: 25px;
+   box-shadow: 0px 0px 5px 3px #8f94fb;
    -moz-box-shadow: 0px 0px 5px 3px #8f94fb;
    -webkit-box-shadow: 0px 0px 5px 3px #8f94fb;
 }
@@ -95,31 +109,39 @@ html
     float: left;
     margin-right: 53px;
     border-radius: 10px;
+    box-shadow: 0px 0px 5px 3px #8f94fb;
     -moz-box-shadow: 0px 0px 5px 3px #8f94fb;
     -webkit-box-shadow: 0px 0px 5px 3px #8f94fb;
     text-align: center;
     font-size: 1.6em;
     line-height: 80px;
     position: relative;
+    transition: all 0.2s;
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
     -o-transition: all 0.2s;
     -ms-transition: all 0.2s;
 }
 
-.box:hover
+.box:hover, #start-game:hover
 {
-  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+/*  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
   color: white;
   -webkit-box-shadow: 0px 0px 5px 3px #8f94fb;
-  -moz-box-shadow: 0px 0px 5px 3px #8f94fb;
+  -moz-box-shadow: 0px 0px 5px 3px #8f94fb;*/
 }
 
-.box:active
+.box:active, #start-game:active
 {
-    -webkit-box-shadow: 0px 0px 5px 3px #8f94fb;
-    -moz-box-shadow: 0px 0px 5px 3px #8f94fb;
-    top: 3px;
+      background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+      background: -webkit-linear-gradient(to right, #0f0c29, #302b63, #24243e);
+      background: -o-linear-gradient(to right, #0f0c29, #302b63, #24243e);
+      background: -moz-linear-gradient(to right, #0f0c29, #302b63, #24243e);
+      color: white;
+      box-shadow: 0px 0px 5px 3px #8f94fb;
+      -webkit-box-shadow: 0px 0px 5px 3px #8f94fb;
+      -moz-box-shadow: 0px 0px 5px 3px #8f94fb;
+       top: 3px;
 }
 
 #box4
@@ -136,41 +158,29 @@ margin-right: 0;
     padding-top: 6px;
     border-radius: 10px;
     font-size: 20px;
+    box-shadow: 0px 0px 5px 3px #8f94fb;
     -moz-box-shadow: 0px 0px 5px 3px #8f94fb;
     -webkit-box-shadow: 0px 0px 5px 3px #8f94fb;
     text-align: center;
     position: relative;
+    transition: all 0.2s;
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
     -o-transition: all 0.2s;
     -ms-transition: all 0.2s;
 }
 
-#start-game:hover
-{
-   background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
-     color: white;
-     -webkit-box-shadow: 0px 0px 5px 3px #8f94fb;
-     -moz-box-shadow: 0px 0px 5px 3px #8f94fb;
-}
-
-#start-game:active
-{
-    -webkit-box-shadow: 0px 0px 5px 3px #8f94fb;
-    -moz-box-shadow: 0px 0px 5px 3px #8f94fb;
-    top: 3px;
-}
-
 #time-remaining
 {
-    width: 140px;
+    width: 151px;
     padding: 10px;
     position: absolute;
     background-color: white;
     border-radius: 10px;
+    box-shadow: 0px 0px 5px 3px #8f94fb;
     -webkit-box-shadow: 0px 0px 5px 3px #8f94fb;
     -moz-box-shadow: 0px 0px 5px 3px #8f94fb;
-    left: 435px;
+    left: 425px;
     top: 22px;
     /*visibility: hidden;*/
     display: none;
@@ -182,6 +192,9 @@ margin-right: 0;
         height: 150px;
         border-radius: 10px;
         background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+        background: -webkit-linear-gradient(to right, #0f0c29, #302b63, #24243e);
+        background: -o-linear-gradient(to right, #0f0c29, #302b63, #24243e);
+        background: -moz-linear-gradient(to right, #0f0c29, #302b63, #24243e);
         position: absolute;
         top: 90px;
         left: 95px;
