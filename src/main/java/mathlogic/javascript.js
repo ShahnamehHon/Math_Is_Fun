@@ -33,7 +33,7 @@ for(i=1; i<5; i++){
                 show("correct");
                 setTimeout(function(){
                     hide("correct");
-                }, 2000);
+                }, 1000);
                 //Generate new Q&A
                 generateQA();
             }else{
@@ -41,7 +41,7 @@ for(i=1; i<5; i++){
                             show("wrong");
                             setTimeout(function(){
                             hide("wrong");
-                            }, 2000);
+                            }, 1000);
             }
         }
     }
